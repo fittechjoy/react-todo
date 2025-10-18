@@ -1,70 +1,52 @@
-# Getting Started with Create React App
-
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
-
-## Available Scripts
-
-In the project directory, you can run:
-
-### `npm start`
-
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
-
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
-
-### `npm test`
-
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
-
-### `npm run build`
-
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+# Implementing and Testing a Todo List Component in React
+## Objective:
+- Learn to create, implement, and test a fully functional Todo List component in React using Jest and React Testing Library.
+- This task focuses on hands-on coding and testing to ensure the component operates correctly under various scenarios.
+- Create a new react app named react-todo.
+ 
+### Task Description:
+- You will build a Todo List component that allows users to add, delete, and toggle the completion status of todo items. - - This task will also include writing comprehensive tests to verify each functionality of the component.
+ 
+### Specific API and Component Details:
+#### Component Requirements:
+1. TodoList should display a list of todo items fetched from a static array.
+2. AddTodoForm allows users to add new todos.
+3. Todos can be toggled between completed and not completed by clicking on them.
+4. Todos can be deleted individually.
+   
+#### Step 1: Setup the Todo List Component
+- Create the TodoList Component:
+- Initialize the component state with a few todos for demonstration.
+- Include methods for adding, toggling, and deleting todos.
+ 
+#### Step 2: Write Tests Using Jest and React Testing Library
+- Set Up Testing Environment:
+- Ensure you have Jest and React Testing Library installed:
+> npm install --save-dev jest @testing-library/react @testing-library/jest-dom
+ 
+- Create a _tests_ directory in your src folder to organize your test files.
+ 
+#### Test File Setup:
+- Create a test file for the TodoList component, e.g., TodoList.test.js, in the _tests_ directory.
+- Write Initial Render Test:
+- verify that the TodoList component renders correctly.
+- Ensure that the initial state (a few demo todos) is rendered.
+- Test Adding Todos:
+- Write a test to verify that a new todo can be added.
+- Use fireEvent to simulate user input and form submission.
+- Test Toggling Todos:
+- Write a test to verify that a todo item can be toggled between completed and not completed.
+- Test Deleting Todos:
+- Write a test to verify that a todo item can be deleted.
+- Update Scripts in package.json
+- Edit the scripts section in your package.json
+ 
+“scripts”: {
+    “test”: “jest”
+}
+ 
+- Run Tests:
+- Run your tests using Jest to ensure they pass:
+> npm test
+ 
+#### Well done on completing this project! Let the world hear about this milestone achieved.
